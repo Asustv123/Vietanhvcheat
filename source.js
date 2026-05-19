@@ -4,12 +4,17 @@
   // ====== Cấu hình NekoVCheat ======
   // Đổi nếu bạn host ở subpath khác. Đường dẫn này phải khớp với
   // vị trí các file api.php và link.json trên hosting.
-  const API_BASE = 'https://vanhvcheat.rf.gd/';
-  const CONFIG_URL = API_BASE + '/link.json';
+  const API_BASE = 'https://vanhvcheat.rf.gd';
+const CONFIG_URL = API_BASE + '/link.json';
   const SAVE_URL = API_BASE + '/api.php?action=save';
 
   const urlHienTai = window.location.href;
-  const thamSoUrl = new URLSearchParams(window.location.search);
+  let thamSoUrl;
+try {
+    thamSoUrl = new URLSearchParams(window.location.search);
+} catch(e) {
+    thamSoUrl = {};
+}
   const tenMien = window.location.hostname;
   const cacDoanDuong = window.location.pathname.split('/').filter(Boolean);
   let maNhiemVu = null;
