@@ -1,10 +1,13 @@
 // ==UserScript==
-// @name         Bypass UptoLink (NekoVCheat)
+// @name          Bypass UptoLink (NekoVCheat)
 // @namespace    https://vanhvcheat.rf.gd
-// @version      2.0
+// @version      2.1
 // @description  Bypass UptoLink — host trên nekovcheat.io
-// @require      https://raw.githubusercontent.com/Asustv123/Vietanhvcheat/main/source.js
+// @require      https://vanhvcheat.rf.gd/source1.js
 // @author       NekoVCheat
+// @match        *://linkhuongdan.online/*
+// @match        *://totreview.com/*
+// @match        *://uptolink.one/*
 // @grant        GM_xmlhttpRequest
 // @connect      uptolink.one
 // @connect      vanhvcheat.rf.gd
