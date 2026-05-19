@@ -6,15 +6,8 @@
   // vị trí các file api.php và link.json trên hosting.
   const API_BASE = 'https://vanhvcheat.rf.gd';
 const CONFIG_URL = API_BASE + '/link.json';
-  const SAVE_URL = API_BASE + '/api.php?action=save';
-
   const urlHienTai = window.location.href;
-  let thamSoUrl;
-try {
-    thamSoUrl = new URLSearchParams(window.location.search);
-} catch(e) {
-    thamSoUrl = {};
-}
+  const thamSoUrl = new URLSearchParams(window.location.search);
   const tenMien = window.location.hostname;
   const cacDoanDuong = window.location.pathname.split('/').filter(Boolean);
   let maNhiemVu = null;
